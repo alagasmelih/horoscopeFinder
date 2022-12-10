@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class horoscopeFinder {
     public static void main(String[] args) {
         int month, day;
-        String horoscope ="";
+        String horoscope = "";
         boolean isError = false;
         Scanner input = new Scanner(System.in);
-        System.out.println("What month were you born: ");
+        System.out.println("Enter your day of birth:");
         month = input.nextInt();
-        System.out.println("What day were you born");
+        System.out.println("Enter your day of birth:");
         day = input.nextInt();
 
         switch (month) {
@@ -17,156 +17,155 @@ public class horoscopeFinder {
                     if (day < 22) {
                         horoscope = "Capricorn";
                     } else {
-                        horoscope="Aquarius ";
+                        horoscope = "Aquarius ";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
 
             case 2:
                 if (day >= 1 && day <= 28) {
                     if (day < 20) {
-                        horoscope= "Aquarius";
+                        horoscope = "Aquarius";
                     } else {
-                        horoscope="Pisces";
+                        horoscope = "Pisces";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
             case 3:
                 if (day >= 1 && day <= 31) {
                     if (day < 21) {
-                        horoscope= "Pisces";
+                        horoscope = "Pisces";
                     } else {
-                        horoscope="Aries";
+                        horoscope = "Aries";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
             case 4:
                 if (day >= 1 && day <= 30) {
                     if (day < 21) {
-                        horoscope= "Aries";
+                        horoscope = "Aries";
                     } else {
-                        horoscope="Taurus";
+                        horoscope = "Taurus";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
             case 5:
                 if (day >= 1 && day <= 31) {
                     if (day < 22) {
-                        horoscope= "Taurus";
+                        horoscope = "Taurus";
                     } else {
-                        horoscope="Gemini";
+                        horoscope = "Gemini";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
             case 6:
                 if (day >= 1 && day <= 30) {
                     if (day < 23) {
-                        horoscope= "Gemini";
+                        horoscope = "Gemini";
                     } else {
-                        horoscope="Cancer";
+                        horoscope = "Cancer";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
             case 7:
                 if (day >= 1 && day <= 31) {
                     if (day < 23) {
-                        horoscope= "Cancer";
+                        horoscope = "Cancer";
                     } else {
-                        horoscope="Leo ";
+                        horoscope = "Leo ";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
             case 8:
                 if (day >= 1 && day <= 31) {
                     if (day < 23) {
-                        horoscope= "Leo ";
+                        horoscope = "Leo ";
                     } else {
-                        horoscope="Virgo ";
+                        horoscope = "Virgo ";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
             case 9:
                 if (day >= 1 && day <= 30) {
                     if (day < 23) {
-                        horoscope= "Virgo ";
+                        horoscope = "Virgo ";
                     } else {
-                        horoscope="Libra ";
+                        horoscope = "Libra ";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
             case 10:
                 if (day >= 1 && day <= 31) {
                     if (day < 23) {
-                        horoscope= "Libra ";
+                        horoscope = "Libra ";
                     } else {
-                        horoscope="Scorpio ";
+                        horoscope = "Scorpio ";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
             case 11:
                 if (day >= 1 && day <= 30) {
                     if (day < 22) {
-                        horoscope= "Scorpio ";
+                        horoscope = "Scorpio ";
                     } else {
-                        horoscope="Sagittarius ";
+                        horoscope = "Sagittarius ";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
             case 12:
                 if (day >= 1 && day <= 31) {
                     if (day < 22) {
-                        horoscope= "Sagittarius ";
+                        horoscope = "Sagittarius ";
                     } else {
-                        horoscope="Capricorn ";
+                        horoscope = "Capricorn ";
                     }
 
                 } else {
-                    isError=true;
+                    isError = true;
                 }
                 break;
 
 
-
             default:
-                isError=true;
+                isError = true;
 
         }
         if (isError) {
             System.out.println("You entered incorrectly..!!");
-        }else {
+        } else {
             System.out.println("You're  horoscope: " + horoscope);
         }
     }
